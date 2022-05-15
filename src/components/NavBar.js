@@ -21,7 +21,8 @@ import {Search2Icon} from '@chakra-ui/icons';
 import NotificationIcon from '../assets/icons/notification-icon.png';
 import userImg from '../assets/user_ojo.png';
 
-export const NavBar = () => {
+export const NavBar = ({username}) => {
+		
 	const [clicked, setClicked] = useBoolean();
 	const searchRef = useRef();
 	useOutsideClick({
@@ -64,7 +65,7 @@ export const NavBar = () => {
 									Hello
 								</Text>
 								<Text fontSize='14px' lineHeight='19px'>
-									Oluwaleke Ojo
+									{username ? username : 'Oluwaleke Ojo'}
 								</Text>
 							</VStack>
 							<Avatar h='36px' w='36px' name='Christian Nwamba' src={userImg} />
