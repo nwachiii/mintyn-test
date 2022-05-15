@@ -15,5 +15,5 @@ export const MintLogo = props => {
     ? undefined
     : `${spin} 3s linear`;
 
-  return <Image animation={animation} src={logo} {...props} />;
+  return <Image my={4} borderRadius="xl" animation={animation} src={logo} {...props} />;
 };

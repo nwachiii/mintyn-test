@@ -9,11 +9,12 @@ export const Sidebar = () => {
 			<Button w='168px' colorScheme='green' borderRadius='3xl' fontSize='12px' lineHeight='14px'>
 				GENERATE INVOICE
 			</Button>
-			{SidebarItems.map((entry) => (
-				<VStack w='100%' align='left'>
+			{SidebarItems.map((entry, key) => (
+				<VStack key={key} w='100%' align='left'>
 					<Text pl='2.1em'>{entry.title}</Text>
-					{entry.items.map((item) => (
+					{entry.items.map((item, index) => (
 						<Box
+							key={index}
 							h='36px'
 							alignItems='center'
 							as={Link}
