@@ -1,5 +1,5 @@
 import React from 'react';
-import {Login, Overview} from './pages';
+import {Dashboard, Login, Overview} from './pages';
 import {ChakraProvider, theme} from '@chakra-ui/react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
@@ -9,7 +9,10 @@ function App () {
 			<BrowserRouter>
 				<Routes>
 					<Route path='/' element={<Login />} />
-					<Route path='/dashboard' element={<Overview />} />
+          <Route path='/dashboard' element={<Dashboard />}>
+            <Route path="overview" element={<Overview />} />
+            <Route path="login" element={<Login />} />
+          </Route>
 				</Routes>
 			</BrowserRouter>
 		</ChakraProvider>
