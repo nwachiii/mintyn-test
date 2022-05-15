@@ -1,13 +1,17 @@
-import {Box, Stack} from '@chakra-ui/layout';
+import {Flex, Stack} from '@chakra-ui/layout';
 import React from 'react';
+import { TransactionBox } from '../../components';
 
 export const Overview = () => {
-	return (
+    return (
+        <Flex>
+
 		<Stack direction='row' spacing="37px">
-			<Box h={75} w={253} bg='#FFFFFF' boxShadow='lg' />
-			<Box h={75} w={253} bg='#FFFFFF' boxShadow='lg' />
-			<Box h={75} w={253} bg='#FFFFFF' boxShadow='lg' />
-			<Box h={75} w={253} bg='#FFFFFF' boxShadow='lg' />
+			<TransactionBox description="Daiily Transaction Volume" value="2,342" />
+			<TransactionBox description="Daiily Transaction Volume" value="2,342" />
+			<TransactionBox description="Daiily Transaction Volume" value="2,342" />
+			<TransactionBox description="Daiily Transaction Volume" value="2,342" />
 		</Stack>
+        </Flex>
 	);
 };
