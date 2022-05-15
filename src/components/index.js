@@ -1,4 +1,7 @@
 export {NavBar} from './NavBar'
 export {Sidebar} from './Sidebar'
 export { MintLogo } from './shared/MintLogo'
+export { CustomBox } from './shared/CustomBox'
+export { TransactionBox } from './TransactionBox'
+export { TransactionChart } from './TransactionChart'
 export {ToggleAppTheme} from './shared/ToggleAppTheme'

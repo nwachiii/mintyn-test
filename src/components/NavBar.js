@@ -18,7 +18,7 @@ import {
 import React, {useRef} from 'react';
 import {Search2Icon} from '@chakra-ui/icons';
 
-import NotificationIcon from '../assets/notification-icon.png';
+import NotificationIcon from '../assets/icons/notification-icon.png';
 import userImg from '../assets/user_ojo.png';
 
 export const NavBar = () => {
