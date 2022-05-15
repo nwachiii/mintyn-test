@@ -1,18 +1,19 @@
 import React from 'react';
 import { Image, keyframes, usePrefersReducedMotion } from '@chakra-ui/react';
-import logo from './logo.svg';
+
+import logo from '../../assets/mint-logo.png';
 
 const spin = keyframes`
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from { transform: rotate(-30deg); }
+  to { transform: rotate(0deg); }
 `;
 
-export const Logo = props => {
+export const MintLogo = props => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const animation = prefersReducedMotion
     ? undefined
-    : `${spin} infinite 20s linear`;
+    : `${spin} 3s linear`;
 
   return <Image animation={animation} src={logo} {...props} />;
 };
