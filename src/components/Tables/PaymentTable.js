@@ -63,7 +63,8 @@ export const PaymentTable = () => {
 
 	const totalPages = Math.ceil(data.length / perPage);
 	return (
-		<VStack spacing={2} w='100%'>
+        <VStack spacing={2} w='100%'>
+            <h1> <b>Payments</b> </h1>
 			<Flex p={2} alignItems='center' mb={3} justifyContent='space-between' w='98%' mx='auto' flex={1}>
 				<Box d='flex'>
 					<Text fontSize='14px' color='gray'>{`Showing ${x + 1} - ${y > data.length
