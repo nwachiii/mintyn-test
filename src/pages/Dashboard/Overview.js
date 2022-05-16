@@ -1,7 +1,7 @@
 import {VStack, HStack, Grid, GridItem, Stack, Text, Flex} from '@chakra-ui/react';
 import React from 'react';
 
-import {CustomBox, TransactionBox, TransactionChart} from '../../components';
+import {CustomBox, PaymentTable, TransactionBox, TransactionChart} from '../../components';
 
 export const Overview = () => {
 	return (
@@ -53,6 +53,9 @@ export const Overview = () => {
 					</CustomBox>
 				</GridItem>
 			</Grid>
+
+			{/* Payment Table */}
+			<PaymentTable />
 		</VStack>
 	);
 };

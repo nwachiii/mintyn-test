@@ -1,0 +1,14 @@
+
+.orderTable__header-rows * {
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+
+.orderTable__body-row {
+  border: none;
+  border-bottom: 3px solid lightgray;
+}
+.orderTable__body-data {
+  text-align: center;
+}
