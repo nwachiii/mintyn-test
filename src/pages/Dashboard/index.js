@@ -9,7 +9,7 @@ export const Dashboard = () => {
 	return (
 		<Flex direction='column'>
 			<NavBar username={username} />
-			<Grid h='100vh' templateRows='repeat(2, 1fr)' templateColumns='repeat(6, 1fr)' gap={4}>
+			<Grid minH='100vh' templateRows='repeat(2, 1fr)' templateColumns='repeat(6, 1fr)' gap={4}>
 				<GridItem w='clamp(260px, 100%, 400px)' rowSpan={2} colSpan={1} boxShadow='lg'>
 					<Sidebar />
 				</GridItem>
