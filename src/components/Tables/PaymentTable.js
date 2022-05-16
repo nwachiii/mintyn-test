@@ -1,6 +1,6 @@
 import React, {useMemo, useState} from 'react';
 import {ChevronLeftIcon, ChevronRightIcon} from '@chakra-ui/icons';
-import {Box, Divider, Flex, IconButton, Select, Stack, Text, VStack} from '@chakra-ui/react';
+import {Box, Divider, Flex, Heading, IconButton, Select, Stack, Text, VStack} from '@chakra-ui/react';
 
 import {data} from './data';
 import {Capsule} from './Capsule';
@@ -64,7 +64,7 @@ export const PaymentTable = () => {
 	const totalPages = Math.ceil(data.length / perPage);
 	return (
         <VStack spacing={2} w='100%'>
-            <h1> <b>Payments</b> </h1>
+            <Heading textAlign='left' w="full"> <b>Payments</b> </Heading>
 			<Flex p={2} alignItems='center' mb={3} justifyContent='space-between' w='98%' mx='auto' flex={1}>
 				<Box d='flex'>
 					<Text fontSize='14px' color='gray'>{`Showing ${x + 1} - ${y > data.length
